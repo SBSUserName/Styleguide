@@ -1,3 +1,5 @@
 markdown: kramdown
 baseurl: /Styleguide
 exclude: ["README.md"]
+sass:
+  style: compressed

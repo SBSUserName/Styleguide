@@ -1,9 +1,21 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Styleguide</title>
-  </head>
-  <body>
-    <h1>Hello Warudo!!!</h1>
-  </body>
-</html>
+---
+layout: default
+---
+
+<p class="main-title">The Styleguide</p>
+
+<div class="mb-3">{% include components/customDivider.html %}</div>
+
+<!-- Colors -->
+{% include structures/structure_alpha.html structureName="Structure Alpha" %}
+
+<div style="height: 3rem"></div>
+
+<!-- Typography -->
+{% include structures/structure_beta.html %}
+
+<div style="height: 3rem"></div>
+
+<!-- Structure Alpha again (reusability with different structureName) -->
+{% include structures/structure_alpha.html structureName="Structure Alpha
+(another one)" %}
